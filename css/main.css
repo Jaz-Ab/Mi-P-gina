@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  width: 90%;
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+.column {
+  background: gray;
+  float: left;
+  margin-right: 2%;
+  width: 1920px;
+  height: 400px;
+}
+
+.title {
+  text-align: center;
+}
+
+/*sm-small*/
+
+@media (min-width: 480px) {
+  /*4 son 2 en samll*/
+  .four-columns .column {
+    width: 49%;
+  }
+
+  .four-columns .column:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/*md*/
+@media (min-width: 768px) {
+
+}
+
+/*Large*/
+@media (min-width: 1024px) {
+  /*Dos columnas*/
+  .two-columns .column {
+    width: 49%;
+  }
+
+  .two-columns .column:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /*Tres columnas*/
+  .three-columns .column {
+    width: 32%;
+  }
+
+  .three-columns .column:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  /*Cuatro columnas*/
+  .four-columns .column {
+    width: 23.5%;
+  }
+
+  .four-columns .column:nth-child(2n) {
+    margin-right: 2%;
+  }
+
+  .four-columns .column:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  /*Seis columnas*/
+  .six-columns .column {
+    width: 15%;
+  }
+
+  .six-columns .column:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  /*Doce columnas*/
+  .twelve-columns .column {
+    width: 6.5%;
+  }
+
+  .twelve-columns .column:nth-child(12n) {
+    margin-right: 0;
+  }
+}
