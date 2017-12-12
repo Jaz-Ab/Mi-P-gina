@@ -4,48 +4,10 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-}
 
-.row {
-  width: 90%;
-  margin: 1em auto;
-  overflow: hidden;
-}
-
-.column {
-  background: gray;
-  float: left;
-  margin-right: 2%;
-  width: 1920px;
-  height: 400px;
-}
-
-.title {
-  text-align: center;
-}
-
-/*sm-small*/
-
-@media (min-width: 480px) {
-  /*4 son 2 en samll*/
-  .four-columns .column {
-    width: 49%;
-  }
-
-  .four-columns .column:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
-/*md*/
-@media (min-width: 768px) {
-
-}
 
 /*Large*/
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   /*Dos columnas*/
   .two-columns .column {
     width: 49%;
@@ -58,10 +20,12 @@
   /*Tres columnas*/
   .three-columns .column {
     width: 32%;
+    height: 470px;
   }
 
   .three-columns .column:nth-child(3n) {
     margin-right: 0;
+    margin-bottom: 20px;
   }
 
   /*Cuatro columnas*/
@@ -93,5 +57,96 @@
 
   .twelve-columns .column:nth-child(12n) {
     margin-right: 0;
+  }
+
+  /*estilos de página*/
+  .nav-header {
+    height: 70px;
+    background: #343A40;
+  }
+
+  .menu, .logo {
+    font-weight: bold;
+    color:  #ffff;
+    font-family: sans-serif;
+  }
+
+
+  .logo {
+    position: relative;
+    top: 22px;
+    left: 18%;
+    font-size: 22px;
+  }
+
+  .container {
+    width: 1920px;
+  }
+
+  .items {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    top: 0px;
+    left: 375%;
+    margin-left: 23px;
+    font-size: 18px;
+  }
+
+  .colors-image {
+    height: 400px;
+    width: 1920px;
+  }
+
+  .eigth-columns {
+    width: 66%;
+  }
+
+  .row {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .column {
+    float: left;
+    margin-right: 2%;
+  }
+
+  .text-title {
+    padding: 30px 30px 18px 30px;
+  }
+
+  .text-two {
+    padding: 0px 30px 30px 30px;
+  }
+
+  .image-three {
+    position: relative;
+    left: 15px;
+    top: 15px;
+    width: 520px;
+    height: 380px;
+  }
+
+  .title-image {
+    position: relative;
+    top: 30px;
+    text-align: center;
+  }
+
+  .footer {
+    height: 70px;
+    background: #343A40;
+  }
+
+  .title-footer {
+    color: #ffff;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: relative;
+    top: 25px;
+    left: 330%;
   }
 }
